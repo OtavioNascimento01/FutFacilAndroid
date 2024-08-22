@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/telaRegistro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/corFundo"
+    tools:context=".TelaRegistro"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="384dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="14dp"
+            android:text="Registre-se agora no FutFácil"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.06" />
+
+        <TextView
+            android:id="@+id/txtUsuarioRegistro"
+            android:layout_width="132dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="32dp"
+            android:text="Novo usuário:"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+        <EditText
+            android:id="@+id/ptxtUsuarioRegistro"
+            android:layout_width="319dp"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/corPlainText"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/txtUsuarioRegistro" />
+
+        <TextView
+            android:id="@+id/txtSenhaRegistro"
+            android:layout_width="59dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:text="Senha:"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/ptxtNome" />
+
+        <EditText
+            android:id="@+id/ptxtCpf"
+            android:layout_width="319dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/corPlainText"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/txtCpf" />
+
+        <TextView
+            android:id="@+id/txtCpf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="CPF:"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/ptxtEmailRegistroC" />
+
+        <EditText
+            android:id="@+id/ptxtEmailRegistroC"
+            android:layout_width="314dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/corPlainText"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmailRegistroC" />
+
+        <TextView
+            android:id="@+id/txtEmailRegistroC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Confirmar email:"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/ptxtEmailRegistro" />
+
+        <EditText
+            android:id="@+id/ptxtEmailRegistro"
+            android:layout_width="315dp"
+            android:layout_height="47dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/corPlainText"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmailRegistro" />
+
+        <TextView
+            android:id="@+id/txtEmailRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Email:"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/ptxtSenhaRegistroC" />
+
+        <EditText
+            android:id="@+id/ptxtSenhaRegistroC"
+            android:layout_width="317dp"
+            android:layout_height="39dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="@color/corPlainText"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/txtSenhaRegistroC" />
+
+        <TextView
+            android:id="@+id/txtSenhaRegistroC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Confirmar senha:"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/ptxtSenhaRegistro" />
+
+        <EditText
+            android:id="@+id/ptxtSenhaRegistro"
+            android:layout_width="313dp"
+            android:layout_height="46dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="@color/corPlainText"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/txtSenhaRegistro" />
+
+        <Button
+            android:id="@+id/btnRegistrarUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@color/black"
+            android:onClick="registrar"
+            android:text="Registre-se"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ptxtCpf" />
+
+        <TextView
+            android:id="@+id/txtNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nome completo:"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/ptxtUsuarioRegistro" />
+
+        <EditText
+            android:id="@+id/ptxtNome"
+            android:layout_width="316dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
