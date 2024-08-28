@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_notificacoes"
+        android:icon="@drawable/notifications_white"
+        android:title="Notificações"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_home"
+        android:icon="@drawable/home_white"
+        android:title="Home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_perfil"
+        android:icon="@drawable/user_white"
+        android:title="Perfil"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_configuracoes"
+        android:title="Configurações" />
+    <item
+        android:id="@+id/item_sobre"
+        android:title="Sobre" />
+    <item
+        android:id="@+id/item_logout"
+        android:icon="@drawable/logout"
+        android:title="Logout" />
+</menu>

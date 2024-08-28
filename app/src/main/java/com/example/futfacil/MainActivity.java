@@ -3,7 +3,6 @@ package com.example.futfacil;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -12,28 +11,42 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.google.android.material.textfield.TextInputEditText;
+import com.example.futfacil.databinding.TelaLoginBinding;
 
 public class MainActivity extends AppCompatActivity {
+
+    private TelaLoginBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.tela_login);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+
+        // Inicializar o ViewBinding
+        binding = TelaLoginBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        ViewCompat.setOnApplyWindowInsetsListener(binding.getRoot(), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // Apenas para testes no app
+        GerenciamentoUsuario.ListaUsuario.inicializarUsuarioTeste();
+
+        // Configuração do botão de login
+        binding.btnLogin.setOnClickListener(this::login);
     }
 
     public void login(View view) {
-        TextInputEditText usuario = findViewById(R.id.ptxtUsuario);
-        TextInputEditText senha = findViewById(R.id.ptxtSenha);
+        String usuarioTexto = binding.etUsuario.getText().toString();
+        String senhaTexto = binding.etSenha.getText().toString();
 
-        String usuarioTexto = usuario.getText().toString();
-        String senhaTexto = senha.getText().toString();
+        if (usuarioTexto.isEmpty() || senhaTexto.isEmpty()) {
+            Toast.makeText(this, "Por favor, preencha ambos os campos", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
         // Verificar se o usuário e a senha estão corretos na lista de usuários
         GerenciamentoUsuario.Usuario usuarioEncontrado = null;
@@ -46,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (usuarioEncontrado != null) {
             // Login bem-sucedido, redirecionar para a tela principal
-            Intent intent = new Intent(this, TelaPrincipal.class); // Substitua TelaPrincipal pela sua tela principal
+            Intent intent = new Intent(this, TelaPrincipal.class);
             startActivity(intent);
         } else {
             // Login falhou, exibir mensagem de erro
@@ -56,6 +69,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void abrirTelaRegistro(View view) {
         Intent intent = new Intent(this, TelaRegistro.class);
-        startActivity(intent);    }
-
+        startActivity(intent);
+    }
 }

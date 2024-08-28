@@ -19,6 +19,51 @@
     <string name="criar_jogador">Criar Jogador</string>
     <string name="criar_partida">Criar Partida</string>
 
+    <string-array name="sexo">
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Outro</item>
+    </string-array>
+
+    <string-array name="tipoJogo">
+        <item>Futsal</item>
+        <item>Campo</item>
+        <item>Society</item>
+    </string-array>
+
+    <string-array name="nivelJogo">
+        <item>Amigável</item>
+        <item>Amistoso</item>
+        <item>Campeonato</item>
+    </string-array>
+
+    <string-array name="posicoes_campo">
+        <item>Goleiro</item>
+        <item>Zagueiro</item>
+        <item>Lateral Esquerdo</item>
+        <item>Lateral Direito</item>
+        <item>Volante</item>
+        <item>Meia</item>
+        <item>Atacante</item>
+    </string-array>
+
+    <string-array name="posicoes_futsal">
+        <item>Goleiro</item>
+        <item>Fixo</item>
+        <item>Ala</item>
+        <item>Pivô</item>
+    </string-array>
+
+    <string-array name="posicoes_society">
+        <item>Goleiro</item>
+        <item>Zagueiro</item>
+        <item>Lateral Esquerdo</item>
+        <item>Lateral Direito</item>
+        <item>Volante</item>
+        <item>Meia</item>
+        <item>Atacante</item>
+    </string-array>
+
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus

@@ -34,6 +34,7 @@
         android:layout_height="64dp"
         android:text="@string/buscar_jogador"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="49dp" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
 </androidx.constraintlayout.widget.ConstraintLayout>

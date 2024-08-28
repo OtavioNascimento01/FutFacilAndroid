@@ -73,5 +73,10 @@ public class GerenciamentoUsuario {
         public static List<Usuario> listarUsuarios() {
             return usuarios;
         }
+
+        // Método para inicializar com um usuário de teste
+        public static void inicializarUsuarioTeste() {
+            adicionarUsuario(new Usuario("1", "Nome Teste", "1", "teste@teste.com", "123.456.789-00"));
+        }
     }
 }

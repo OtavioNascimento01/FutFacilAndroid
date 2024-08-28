@@ -1,11 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.FutFacil" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <item name="colorPrimaryDark">@color/black</item>
-        <item name="colorPrimary">@color/corSecundaria</item>
+
         <item name="android:fontFamily">@font/agencyfb</item>
-        <item name="android:windowBackground">@color/corFundo</item>
+
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="android:windowBackground">@color/green</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textColorPrimary">@color/black</item>
     </style>
