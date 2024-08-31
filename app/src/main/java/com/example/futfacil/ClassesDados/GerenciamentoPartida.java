@@ -1,4 +1,4 @@
-package com.example.futfacil;
+package com.example.futfacil.ClassesDados;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,13 +65,18 @@ public class GerenciamentoPartida {
     public static class ListaPartida {
         private static final List<GerenciamentoPartida.Partida> partidas = new ArrayList<>();
 
-        public void adicionarJogador(GerenciamentoPartida.Partida partida) {
+        public static void adicionarPartida(GerenciamentoPartida.Partida partida) {
             partidas.add(partida);
         }
 
         public static List<GerenciamentoPartida.Partida> listarPartidas() {
             return partidas;
         }
+
+        // Método para inicializar com uma partida de teste
+//        public static void inicializarPartidaTeste() {
+//            adicionarPartida(new Partida("Pelada dos amigos", ".", "Rua Renato Del Mese, 1898, Bairro Fátima, Caxias do Sul", "Amigável", "Futsal"));
+//        }
     }
 
 }

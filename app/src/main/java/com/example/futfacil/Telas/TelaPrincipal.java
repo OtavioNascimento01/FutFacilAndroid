@@ -1,15 +1,13 @@
-package com.example.futfacil;
+package com.example.futfacil.Telas;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.futfacil.databinding.ActivityMainBinding;
+import com.example.futfacil.R;
 import com.example.futfacil.databinding.TelaPrincipalBinding;
 
 public class TelaPrincipal extends AppCompatActivity {

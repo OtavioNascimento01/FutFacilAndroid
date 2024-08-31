@@ -1,4 +1,4 @@
-package com.example.futfacil;
+package com.example.futfacil.ClassesDados;
 
 import java.util.ArrayList;
 import java.util.List;

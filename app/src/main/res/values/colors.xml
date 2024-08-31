@@ -5,6 +5,7 @@
     <color name="green">#00BE63</color>
     <color name="blue">#093759</color>
     <color name="corPlainText">#40484D</color>
+    <color name="greenEscuro">#007B31</color>
 
     <color name="toolbar_background">#093759</color>
 </resources>

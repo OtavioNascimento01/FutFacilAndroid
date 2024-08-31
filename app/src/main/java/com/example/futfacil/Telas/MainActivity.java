@@ -1,4 +1,4 @@
-package com.example.futfacil;
+package com.example.futfacil.Telas;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.futfacil.ClassesDados.GerenciamentoUsuario;
 import com.example.futfacil.databinding.TelaLoginBinding;
 
 public class MainActivity extends AppCompatActivity {

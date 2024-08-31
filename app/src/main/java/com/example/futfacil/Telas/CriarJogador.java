@@ -1,4 +1,4 @@
-package com.example.futfacil;
+package com.example.futfacil.Telas;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,14 +7,11 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
+import com.example.futfacil.ClassesDados.GerenciamentoJogador;
+import com.example.futfacil.R;
 import com.example.futfacil.databinding.CriarJogadorBinding;
-import com.example.futfacil.databinding.TelaPrincipalBinding;
 
 public class CriarJogador extends AppCompatActivity {
 

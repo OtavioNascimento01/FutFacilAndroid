@@ -1,4 +1,4 @@
-package com.example.futfacil;
+package com.example.futfacil.Telas;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,13 +6,10 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-import com.example.futfacil.databinding.CriarJogadorBinding;
+import com.example.futfacil.ClassesDados.GerenciamentoPartida;
+import com.example.futfacil.R;
 import com.example.futfacil.databinding.CriarPartidaBinding;
 
 public class CriarPartida extends AppCompatActivity {
@@ -27,6 +24,8 @@ public class CriarPartida extends AppCompatActivity {
 
         // Define o layout da Activity com a raiz do binding
         setContentView(binding.getRoot());
+
+        //GerenciamentoPartida.ListaPartida.inicializarPartidaTeste();
 
         // Configuração do Spinner "Tipo de Jogo"
         ArrayAdapter<CharSequence> adapterTipoJogo = ArrayAdapter.createFromResource(this,
@@ -61,7 +60,7 @@ public class CriarPartida extends AppCompatActivity {
         GerenciamentoPartida.Partida partida = new GerenciamentoPartida.Partida(nomePartida, tipoJogo, nivelJogo, enderecoPartida, descricaoPartida);
 
         GerenciamentoPartida.ListaPartida listaPartida = new GerenciamentoPartida.ListaPartida();
-        listaPartida.adicionarJogador(partida);
+        listaPartida.adicionarPartida(partida);
 
         Toast.makeText(this, "Partida criada com sucesso!", Toast.LENGTH_SHORT).show();
 

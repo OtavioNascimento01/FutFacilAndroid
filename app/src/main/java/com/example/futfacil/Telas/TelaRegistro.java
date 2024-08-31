@@ -1,9 +1,11 @@
-package com.example.futfacil;
+package com.example.futfacil.Telas;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.futfacil.ClassesDados.GerenciamentoUsuario;
 import com.example.futfacil.databinding.TelaRegistroBinding;
 
 public class TelaRegistro extends AppCompatActivity {
